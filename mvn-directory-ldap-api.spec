@@ -4,7 +4,7 @@
 #
 Name     : mvn-directory-ldap-api
 Version  : 1.0.0.m20
-Release  : 1
+Release  : 2
 URL      : https://github.com/apache/directory-ldap-api/archive/1.0.0-M20.tar.gz
 Source0  : https://github.com/apache/directory-ldap-api/archive/1.0.0-M20.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar
