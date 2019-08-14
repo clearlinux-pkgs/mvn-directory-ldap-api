@@ -4,7 +4,7 @@
 #
 Name     : mvn-directory-ldap-api
 Version  : 1.0.0.m20
-Release  : 4
+Release  : 5
 URL      : https://github.com/apache/directory-ldap-api/archive/1.0.0-M20.tar.gz
 Source0  : https://github.com/apache/directory-ldap-api/archive/1.0.0-M20.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar
@@ -59,16 +59,17 @@ Source49  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-mod
 Source50  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-net-mina/1.0.0-M33/api-ldap-net-mina-1.0.0-M33.jar
 Source51  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-net-mina/1.0.0-M33/api-ldap-net-mina-1.0.0-M33.pom
 Source52  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-net-parent/1.0.0-M33/api-ldap-net-parent-1.0.0-M33.pom
-Source53  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-parent/1.0.0-M33/api-ldap-parent-1.0.0-M33.pom
-Source54  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.jar
-Source55  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.pom
-Source56  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-parent/1.0.0-M33/api-ldap-schema-parent-1.0.0-M33.pom
-Source57  : https://repo1.maven.org/maven2/org/apache/directory/api/api-parent/1.0.0-M20/api-parent-1.0.0-M20.pom
-Source58  : https://repo1.maven.org/maven2/org/apache/directory/api/api-parent/1.0.0-M33/api-parent-1.0.0-M33.pom
-Source59  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar
-Source60  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom
-Source61  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.jar
-Source62  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.pom
+Source53  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-parent/1.0.0-M20/api-ldap-parent-1.0.0-M20.pom
+Source54  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-parent/1.0.0-M33/api-ldap-parent-1.0.0-M33.pom
+Source55  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.jar
+Source56  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.pom
+Source57  : https://repo1.maven.org/maven2/org/apache/directory/api/api-ldap-schema-parent/1.0.0-M33/api-ldap-schema-parent-1.0.0-M33.pom
+Source58  : https://repo1.maven.org/maven2/org/apache/directory/api/api-parent/1.0.0-M20/api-parent-1.0.0-M20.pom
+Source59  : https://repo1.maven.org/maven2/org/apache/directory/api/api-parent/1.0.0-M33/api-parent-1.0.0-M33.pom
+Source60  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar
+Source61  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom
+Source62  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.jar
+Source63  : https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : ANTLR-PD Apache-2.0
@@ -277,35 +278,38 @@ cp %{SOURCE51} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/a
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-net-parent/1.0.0-M33
 cp %{SOURCE52} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-net-parent/1.0.0-M33/api-ldap-net-parent-1.0.0-M33.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M20
+cp %{SOURCE53} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M20/api-ldap-parent-1.0.0-M20.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M33
-cp %{SOURCE53} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M33/api-ldap-parent-1.0.0-M33.pom
+cp %{SOURCE54} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M33/api-ldap-parent-1.0.0-M33.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33
-cp %{SOURCE54} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.jar
+cp %{SOURCE55} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33
-cp %{SOURCE55} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.pom
+cp %{SOURCE56} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-parent/1.0.0-M33
-cp %{SOURCE56} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-parent/1.0.0-M33/api-ldap-schema-parent-1.0.0-M33.pom
+cp %{SOURCE57} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-parent/1.0.0-M33/api-ldap-schema-parent-1.0.0-M33.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M20
-cp %{SOURCE57} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M20/api-parent-1.0.0-M20.pom
+cp %{SOURCE58} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M20/api-parent-1.0.0-M20.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M33
-cp %{SOURCE58} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M33/api-parent-1.0.0-M33.pom
+cp %{SOURCE59} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-parent/1.0.0-M33/api-parent-1.0.0-M33.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20
-cp %{SOURCE59} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar
+cp %{SOURCE60} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20
-cp %{SOURCE60} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom
+cp %{SOURCE61} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33
-cp %{SOURCE61} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.jar
+cp %{SOURCE62} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33
-cp %{SOURCE62} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.pom
+cp %{SOURCE63} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/api/api-util/1.0.0-M33/api-util-1.0.0-M33.pom
 
 
 %files
@@ -365,6 +369,7 @@ cp %{SOURCE62} %{buildroot}/usr/share/java/.m2/repository/org/apache/directory/a
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-net-mina/1.0.0-M33/api-ldap-net-mina-1.0.0-M33.jar
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-net-mina/1.0.0-M33/api-ldap-net-mina-1.0.0-M33.pom
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-net-parent/1.0.0-M33/api-ldap-net-parent-1.0.0-M33.pom
+/usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M20/api-ldap-parent-1.0.0-M20.pom
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-parent/1.0.0-M33/api-ldap-parent-1.0.0-M33.pom
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.jar
 /usr/share/java/.m2/repository/org/apache/directory/api/api-ldap-schema-data/1.0.0-M33/api-ldap-schema-data-1.0.0-M33.pom
